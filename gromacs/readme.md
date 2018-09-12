@@ -24,3 +24,7 @@ cmake .. -DGMX_GPU=on -DCMAKE_INSTALL_PREFIX=/opt/gromacs-2018.2/single -DGMX_BU
 gmx mdrun -nb gpu -ntmpi 16 -ntomp 1 -v -deffnm nvt
 
 ```
+
+`ntmpi` is cpu threads. With `-ntmpi 16`, cpu utilization will be `1600%` according to `top`. 
+
+`ntomp` means  OpenMP threads for each `ntmpi`.
