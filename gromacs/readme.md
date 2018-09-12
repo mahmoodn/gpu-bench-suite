@@ -7,19 +7,20 @@ mkdir build
 cd build
 ```
 
-# use nvt.gro as the input file
+Input ile is `nvt.gro` which is provided locally
 
-## for gmx_mpi (multi process on gpu)
+If you have multiple GPUs, you can built gmx with mpi. Therefore, you have multiple gmx_mpi process on GPU
 
+```
 cmake .. -DGMX_MPI=on -DGMX_GPU=on -DCMAKE_INSTALL_PREFIX=/opt/gromacs-2018.2/single -DGMX_BUILD_OWN_FFTW=ON
-
 gmx_mpi mdrun -nb gpu -ntmpi 16 -ntomp 1 -v -deffnm nvt
+```
+
+If you have one GPU, use thread-mpi comes with gromcas. Therefore, you have one gmx process on GPU
 
 
-
-# for thread-mpi (single process on gpu)
-
+```
 cmake .. -DGMX_GPU=on -DCMAKE_INSTALL_PREFIX=/opt/gromacs-2018.2/single -DGMX_BUILD_OWN_FFTW=ON
-
 gmx mdrun -nb gpu -ntmpi 16 -ntomp 1 -v -deffnm nvt
 
+```
