@@ -1,14 +1,11 @@
 
+```
 wget ftp://ftp.gromacs.org/pub/gromacs/gromacs-2018.2.tar.gz
-
 tar zxf gromacs-2018.2.tar.gz
-
 cd gromacs-2018.2
-
 mkdir build
-
 cd build
-
+```
 
 # use nvt.gro as the input file
 
