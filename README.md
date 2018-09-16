@@ -12,3 +12,7 @@ A collection of Nvidia benchmaking programs
 1.1) xmrig
 
 1.2) ethminer
+
+3) Graph analysis
+
+3.1) gunrock
