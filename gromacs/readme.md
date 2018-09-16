@@ -9,7 +9,7 @@ cd build
 
 Input ile is `nvt.gro` which is provided locally
 
-If you have multiple GPUs, you can built gmx with mpi. Therefore, you have multiple gmx_mpi process on GPU
+If you have multiple GPUs, you can built gmx with mpi. Therefore, you have multiple gmx_mpi processes on GPU
 
 ```
 cmake .. -DGMX_MPI=on -DGMX_GPU=on -DCMAKE_INSTALL_PREFIX=/opt/gromacs-2018.2/single -DGMX_BUILD_OWN_FFTW=ON
