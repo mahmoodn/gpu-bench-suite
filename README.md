@@ -7,6 +7,8 @@ A collection of Nvidia benchmaking programs
 
 1.2) lammps
 
+1.3) namd
+
 2) Crypto minning
 
 1.1) xmrig
