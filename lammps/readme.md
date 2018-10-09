@@ -1,9 +1,15 @@
 Prerequites
 
-`sudo apt-get install libjpeg-dev libpng-dev libfftw3-dev`
-
+```
+sudo apt-get install libjpeg-dev libpng-dev libfftw3-dev
 vim ~/.bashrc
    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.0/lib64
+
+```
+
+Commands for building lammps
+
+```
 wget http://lammps.sandia.gov/tars/lammps-stable.tar.gz
 tar zxf lammps-stable.tar.gz 
 cd lammps-11Aug17/lib/gpu
@@ -15,9 +21,12 @@ make yes-gpu
 make yes-molecule
 make yes-kspace
 make yes-rigid
+make ubuntu -j8
+```
 
-make ubuntu
-vim ../bench/in.lj
-    run		10000
-mpirun -np 4 /opt/lammps-22Aug18/src/lmp_ubuntu -sf gpu -pk gpu 1 < ../bench/in.lj
+Run `lj` and `rhodo` inputs. You may set `run` value to lower values to reduce the time.
+```
+mpirun -np 4 /opt/lammps-22Aug18/src/lmp_ubuntu -sf gpu -in in.lj
+mpirun -np 4 /opt/lammps-22Aug18/src/lmp_ubuntu -sf gpu -in in.rhodo
+```
 
