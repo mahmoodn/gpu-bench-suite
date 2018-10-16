@@ -30,6 +30,8 @@ Info: 35084 DIHEDRALS
 
 Commands:
 ```
+wget https://www.ks.uiuc.edu/Research/namd/2.13b1/download/873189/NAMD_2.13b1_Linux-x86_64-multicore-CUDA.tar.gz
+tar zxf NAMD_2.13b1_Linux-x86_64-multicore-CUDA.tar.gz
 cd 2_md
 /opt/NAMD_2.13b1_Linux-x86_64-multicore-CUDA/namd2 +p8 2_md.conf
 ```
