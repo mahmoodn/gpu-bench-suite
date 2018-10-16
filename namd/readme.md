@@ -27,3 +27,9 @@ Info: 112336 ANGLES
 Info: 35084 DIHEDRALS
 
 ```
+
+Commands:
+```
+cd 2_md
+/opt/NAMD_2.13b1_Linux-x86_64-multicore-CUDA/namd2 +p8 2_md.conf
+```
