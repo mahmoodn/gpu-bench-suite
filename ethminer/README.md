@@ -21,7 +21,7 @@ Divide the “MAX” hashrate by 1000000 to get the rate in megahashes. This is 
 4. After it’s downloaded, proceed by clicking “I understand, Continue” button.
 5. Save the Private Key. The Website lets users to print it on a paper too. Once the address is saved, proceed by
 clicking “Save Your Address” button.
-6. There aredifferent ways to connect to different pools that are explained here https://github.com/ethereum-mining/ethminer/blob/master/docs/POOL_EXAMPLES_ETH.md.
+6. There are different ways to connect to different pools that are explained here https://github.com/ethereum-mining/ethminer/blob/master/docs/POOL_EXAMPLES_ETH.md.
 The following command is an example of how to connect to a pool.
 ```
 ethminer -P stratum1+tcp://ETH_WALLET.WORKERNAME@eth.f2pool.com:8008
