@@ -20,3 +20,7 @@ If you are GPU mining using xmrig then editing the thread setting is essential i
 FOR 18.04 AND XMRIG 2.8.1 AND CUDA 10
 
 `sudo apt install libssl1.0-dev libuv1-dev libmicrohttpd-dev cmake`
+
+
+
+`Network-patch.txt` is just used to limit the execution of xmrig to some accepted and rejected jobs.
