@@ -1,0 +1,16 @@
+*** Network.cpp	2018-10-28 18:31:38.492424227 +0330
+--- Network-modified.cpp	2018-10-28 18:31:53.280489195 +0330
+***************
+*** 153,158 ****
+--- 153,163 ----
+  {
+      m_state.add(result, error);
+  
++    if (m_state.accepted + m_state.rejected >= 6 ) { 
++         m_controller->network()->stop(); Workers::stop(); uv_stop(uv_default_loop()); 
++    }
++ 
++ 
+      if (error) {
+          LOG_INFO(isColors() ? "\x1B[01;31mrejected\x1B[0m (%" PRId64 "/%" PRId64 ") diff \x1B[01;37m%u\x1B[0m \x1B[31m\"%s\"\x1B[0m \x1B[01;30m(%" PRIu64 " ms)"
+                              : "rejected (%" PRId64 "/%" PRId64 ") diff %u \"%s\" (%" PRIu64 " ms)",
