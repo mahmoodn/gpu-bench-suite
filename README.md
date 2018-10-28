@@ -22,7 +22,11 @@ A collection of Nvidia benchmaking programs
 4) AI
 
    4.1) Tensorflow
+   
+   4.2) PyTorch
+   
+   4.3) MXNet
 
 5) Multimedia
 
-   5.1) ffmped
+   5.1) FFMPEG
