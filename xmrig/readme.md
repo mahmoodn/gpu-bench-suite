@@ -1,5 +1,7 @@
+FOR 18.04 AND XMRIG 2.8.1 AND CUDA 10
+
 ```
-sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev
+sudo apt-get install git libssl1.0-dev libuv1-dev libmicrohttpd-dev cmake
 git clone https://github.com/xmrig/xmrig-nvidia.git
 cd xmrig-nvidia
 mkdir build
@@ -14,12 +16,6 @@ User and Url in the config.json file should be replaced by your Monero user and 
 
 If you are GPU mining using xmrig then editing the thread setting is essential in which by tweaking you can expect optimal mining performance. You can also change safe setting to true which makes xmrig auto sets to optimal settings for threads.
 
-
-
-
-FOR 18.04 AND XMRIG 2.8.1 AND CUDA 10
-
-`sudo apt install libssl1.0-dev libuv1-dev libmicrohttpd-dev cmake`
 
 
 
