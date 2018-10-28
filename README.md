@@ -13,7 +13,7 @@ A collection of Nvidia benchmaking programs
 
    2.1) xmrig
 
-   2.2) ethminer --> failed
+   2.2) ethminer
 
 3) Graph analysis
 
