@@ -1,6 +1,7 @@
 ```
 sudo apt-get inatall cmake git mesa-common-dev
 git clone https://github.com/ethereum-mining/ethminer
+cd ethminer
 git submodule update --init --recursive
 mkdir build
 cd build
