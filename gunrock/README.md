@@ -16,5 +16,13 @@ salsa, etc. with gunrock. The graph type input can be R-MAT Graph, Random Geomet
 
 There is a dataset subdirectory which provides several datasets in Matrix-Market format. Under the
 dataset/small subdirectory, there are some graph datasets for testing graph primitives which are
-ready to use. Under the dataset/large subdirectory, there are some datasets which you should first
+ready to use.
+```
+./bfs market ../../dataset/small/chesapeake.mtx
+```
+Under the dataset/large subdirectory, there are some datasets which you should first
 download them (by just typing make).
+```
+make ../../dataset/large/delaunay_n21
+./bfs market ../../dataset/large/delaunay_n21/delaunay_n21.mtx
+```
