@@ -25,5 +25,5 @@ clicking “Save Your Address” button.
 6. There are different ways to connect to different pools that are explained here https://github.com/ethereum-mining/ethminer/blob/master/docs/POOL_EXAMPLES_ETH.md.
 The following command is an example of how to connect to a pool.
 ```
-ethminer -U -P stratum1+tcp://ETH_WALLET@eth.f2pool.com:8008
+ethminer -U -P stratum1+tcp://ETH_WALLET@eth-eu.dwarfpool.com:8008
 ```
