@@ -30,3 +30,7 @@ A collection of Nvidia benchmaking programs
 5) Multimedia
 
    5.1) FFMPEG
+   
+6) Volume renderer
+
+   6.1) OptiX 
