@@ -1,3 +1,18 @@
+Install PyTorch from source on Ubuntu (with Cuda 10.0):
+
+Download Anaconda from https://www.anaconda.com/download/ and install it.
+
+Install basic dependencies:
+```
+export CMAKE_PREFIX_PATH="$(dirname $(which conda))/../" # [anaconda root directory]
+conda install numpy pyyaml mkl mkl-include setuptools cmake cffi typing
+conda install -c mingfeima mkldnn
+```
+Install pytorch using anaconda
+```
+conda install pytorch torchvision -c pytorch
+```
+
 To download pytorch examples:
 ```
 git clone https://github.com/pytorch/examples
