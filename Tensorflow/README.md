@@ -42,6 +42,8 @@ cd tensorflow
 ```
 Build Tensorflow with bazel
 ```
-bazel build --config=opt --config=cuda
+bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
 ```
+This process will take a lot of time. It may take 3- 4 hours or maybe even more.
+
 There are some examples in the tensorflow/tensorflow/examples. To download more up-to-date examples, you can download them from https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/tutorials/mnist.
