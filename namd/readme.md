@@ -28,6 +28,14 @@ Info: 35084 DIHEDRALS
 
 ```
 
+MD_4:
+```
+Info: 13165 ATOMS
+Info: 13249 BONDS
+Info: 24082 ANGLES
+Info: 35084 DIHEDRALS
+```
+
 Commands:
 ```
 wget https://www.ks.uiuc.edu/Research/namd/2.13b1/download/873189/NAMD_2.13b1_Linux-x86_64-multicore-CUDA.tar.gz
