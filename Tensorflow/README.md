@@ -49,3 +49,9 @@ This process will take a few hours.
 There are some examples in the tensorflow/tensorflow/examples.Do not import tensorflow from its source directory; change directory to outside the TensorFlow source tree, and relaunch your Python interpreter from there.
 
 You can also download some examples from https://www.tensorflow.org/tutorials/.
+
+To run an example:
+```
+cd PATH_TO_PROJECT
+python3 PROJECT.py
+```
