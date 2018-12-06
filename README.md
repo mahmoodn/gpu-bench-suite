@@ -1,5 +1,3 @@
-# gpu-bench-suite
-A collection of Nvidia benchmaking programs
 
 1) Molecular simulation
 
