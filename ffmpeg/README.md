@@ -1,4 +1,5 @@
 ```
+sudo apt install yasm mingw-w64
 git clone https://git.ffmpeg.org/ffmpeg.git
 ./configure --enable-cuda --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
 make -j 10
