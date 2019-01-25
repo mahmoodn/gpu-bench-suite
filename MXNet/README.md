@@ -1,4 +1,14 @@
+
 Install MXNet from source on Ubuntu (with Cuda 10.0).
+
+Install cuDNN
+```
+tar xvzf cudnn-10.0-linux-x64-v7.4.2.24
+sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include
+sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
+sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+sudo ldconfig
+```
 
 Clone MXNet porject:
 ```
