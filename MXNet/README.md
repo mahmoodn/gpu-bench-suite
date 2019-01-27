@@ -9,6 +9,11 @@ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 sudo ldconfig
 ```
+Some apt dependencies
+
+```
+sudo apt install libopencv-dev libopenblas-dev
+```
 
 Clone MXNet porject:
 ```
