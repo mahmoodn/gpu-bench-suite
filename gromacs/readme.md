@@ -20,7 +20,7 @@ If you have one GPU, use thread-mpi comes with gromcas. Therefore, you have one 
 
 
 ```
-cmake .. -DGMX_GPU=on -DCMAKE_INSTALL_PREFIX=/opt/gromacs-2018.2/single -DGMX_BUILD_OWN_FFTW=ON
+cmake .. -DGMX_GPU=on -DCMAKE_INSTALL_PREFIX=/opt/gromacs-2018.2/single -DGMX_BUILD_OWN_FFTW=ON -DGMX_CUDA_TARGET_SM=52
 gmx mdrun -nb gpu -ntmpi 16 -ntomp 1 -v -deffnm nvt
 
 ```
