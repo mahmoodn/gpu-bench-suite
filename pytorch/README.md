@@ -21,7 +21,7 @@ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
-python3 setup.py install
+sudo python3 setup.py install
 ```
 
 git clone https://github.com/pytorch/examples
