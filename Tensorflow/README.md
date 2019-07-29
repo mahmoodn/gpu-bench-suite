@@ -15,12 +15,14 @@ sudo ldconfig
 ```
 Install dependencies by using following commands.
 ```
+sudo apt install python-pip python-dev
 pip install -U --user pip six numpy wheel mock
-pip3 install -U --user pip six numpy wheel mock
 pip install -U --user keras_applications==1.0.5 --no-deps
-pip3 install -U --user keras_applications==1.0.5 --no-deps
 pip install -U --user keras_preprocessing==1.0.3 --no-deps
-pip3 install -U --user keras_preprocessing==1.0.3 --no-deps
+```
+For kerans, if you hit some errors:
+```
+sudo python -m pip uninstall pip && sudo apt install python-pip --reinstall
 ```
 Donwload bazel
 ```
