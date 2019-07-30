@@ -3,7 +3,7 @@ Download
 git clone --recursive git@github.com:clara-genomics/ClaraGenomicsAnalysis.git
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install
+cmake .. -DCMAKE_BUILD_TYPE=Release -Dcga_enable_benchmarks=ON -DCMAKE_INSTALL_PREFIX=install
 make -j install
 ```
 Run
