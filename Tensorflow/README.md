@@ -50,7 +50,7 @@ This process will take a few hours.
 Install
 ```
 ./bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
-pip install /tmp/tensorflow_pkg/tensorflow-version-tags.whl
+pip install -U --user /tmp/tensorflow_pkg/tensorflow-version-tags.whl
 ```
 
 There are some examples in the tensorflow/tensorflow/examples.Do not import tensorflow from its source directory; change directory to outside the TensorFlow source tree, and relaunch your Python interpreter from there.
