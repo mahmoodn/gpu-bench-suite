@@ -4,7 +4,7 @@ Install PyTorch from source with pip and cudnn.
 
 ```
 sudo apt install python3-pip
-pip3 install numpy
+pip3 install -U --user numpy pyyaml typing
 ```
 
 2) Install cudnn
