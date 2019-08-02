@@ -1,10 +1,10 @@
 Requires
 ```
-pip install -U --user cython
+pip3 install -U --user cython pyqt5 numpy
 ```
 Download and install
 ```
 git clone --recurse-submodules https://github.com/vispy/vispy.git 
 cd vispy 
-python setup.py install --user
+python3 setup.py install --user
 ```
