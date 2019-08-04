@@ -1,10 +1,6 @@
+
 Device 0: "GeForce RTX 2080 Ti"
-Device 1: "GeForce GTX 1080 Ti"
-Device 2: "GeForce GTX 980 Ti"
-Device 0: "GeForce GTX 960"
-Device 0: "Quadro M2000"
 ```
-Device 0: "GeForce RTX 2080 Ti"
   CUDA Driver Version / Runtime Version          10.0 / 10.0
   CUDA Capability Major/Minor version number:    7.5
   Total amount of global memory:                 10989 MBytes (11523260416 bytes)
@@ -39,8 +35,9 @@ Device 0: "GeForce RTX 2080 Ti"
   Device PCI Domain ID / Bus ID / location ID:   0 / 131 / 0
   Compute Mode:
      < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
-
+```
 Device 1: "GeForce GTX 1080 Ti"
+```
   CUDA Driver Version / Runtime Version          10.0 / 10.0
   CUDA Capability Major/Minor version number:    6.1
   Total amount of global memory:                 11178 MBytes (11721506816 bytes)
@@ -75,8 +72,9 @@ Device 1: "GeForce GTX 1080 Ti"
   Device PCI Domain ID / Bus ID / location ID:   0 / 2 / 0
   Compute Mode:
      < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
-
+```
 Device 2: "GeForce GTX 980 Ti"
+```
   CUDA Driver Version / Runtime Version          10.0 / 10.0
   CUDA Capability Major/Minor version number:    5.2
   Total amount of global memory:                 6084 MBytes (6379470848 bytes)
@@ -120,8 +118,9 @@ Device 2: "GeForce GTX 980 Ti"
 
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 10.0, CUDA Runtime Version = 10.0, NumDevs = 3
 Result = PASS
-
+```
 Device 0: "GeForce GTX 960"
+```
   CUDA Driver Version / Runtime Version          10.0 / 10.0
   CUDA Capability Major/Minor version number:    5.2
   Total amount of global memory:                 4041 MBytes (4236902400 bytes)
@@ -159,8 +158,9 @@ Device 0: "GeForce GTX 960"
 
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 10.0, CUDA Runtime Version = 10.0, NumDevs = 1
 Result = PASS
-
+```
 Device 0: "Quadro M2000"
+```
   CUDA Driver Version / Runtime Version          10.0 / 10.0
   CUDA Capability Major/Minor version number:    5.2
   Total amount of global memory:                 4041 MBytes (4236902400 bytes)
