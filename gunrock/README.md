@@ -1,6 +1,6 @@
 ```
 sudo apt install libboost-all-dev
-sudo apt install libmetis-dev
+sudo apt install libmetis-dev rapidjson-dev
 git clone --recursive https://github.com/gunrock/gunrock/
 cd gunrock
 mkdir build
