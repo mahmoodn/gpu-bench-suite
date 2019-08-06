@@ -16,13 +16,8 @@ For nv-code-headers in non default location, use
 ```
 PKG_CONFIG_PATH="/path/to/lib/pkgconfig" ./configure --enable-cuda --enable-cuvid --enable-nvenc --enable-nonfree --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
 ```
-To convert mpeg video to mp4 video:
-```
-ffmpeg -i input -crf 23 -preset medium -movflags +faststart -c:a aac output.mp4
-```
 
-To do 1:1 transcode a single video file and change the scale of the video:
+Commands:
 ```
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64
-ffmpeg -hwaccel cuvid -c:v h264_cuvid -i <input.mp4> -vf scale_npp=1280:720 -c:v h264_nvenc <output.mp4>
+./ffmpeg -init_hw_device cuda=0 -filter_hw_device 0 -i ../fast_video.mp4 -vf  format=nv12,hwupload,scale_npp=1280:720 -c:v h264_nvenc 720p2.mp4
 ```
