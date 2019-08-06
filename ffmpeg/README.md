@@ -12,6 +12,10 @@ git clone https://git.ffmpeg.org/ffmpeg.git
 ./configure --enable-cuda --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
 make -j 10
 ```
+For nv-code-headers in non default location, use
+```
+PKG_CONFIG_PATH="/path/to/lib/pkgconfig" ./configure --enable-cuda --enable-cuvid --enable-nvenc --enable-nonfree --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+```
 To convert mpeg video to mp4 video:
 ```
 ffmpeg -i input -crf 23 -preset medium -movflags +faststart -c:a aac output.mp4
