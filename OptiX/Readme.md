@@ -56,3 +56,9 @@ press 'g' to generate make file.
 ```
 
 Run `make` to build. Executables should be found in the bin directory.
+
+run 
+```
+./bin/optixParticleVolumes -n
+
+```
