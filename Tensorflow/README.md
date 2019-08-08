@@ -56,4 +56,16 @@ pip install -U --user /tmp/tensorflow_pkg/tensorflow-version-tags.whl
 There are some examples in the tensorflow/tensorflow/examples.Do not import tensorflow from its source directory; change directory to outside the TensorFlow source tree, and relaunch your Python interpreter from there.
 
 
-Image label `bazel build tensorflow/examples/label_image/...` and 
+Image label 
+
+Build: `bazel build tensorflow/examples/label_image/...` 
+
+Run: `bazel-bin/tensorflow/examples/label_image/label_image`
+
+Multibox detector
+
+Build: `bazel build tensorflow/examples/multibox_detector/...` 
+
+Run: `bazel-bin/tensorflow/examples/multibox_detector/detect_objects`
+
+and 
