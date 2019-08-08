@@ -60,7 +60,12 @@ Image label
 
 Build: `bazel build tensorflow/examples/label_image/...` 
 
-Run: `bazel-bin/tensorflow/examples/label_image/label_image`
+Run: 
+```
+curl -L "https://storage.googleapis.com/download.tensorflow.org/models/inception_v3_2016_08_28_frozen.pb.tar.gz" |
+  tar -C tensorflow/examples/label_image/data -xz
+bazel-bin/tensorflow/examples/label_image/label_image --image=../paint3.png
+```
 
 Multibox detector
 
@@ -68,4 +73,9 @@ Build: `bazel build tensorflow/examples/multibox_detector/...`
 
 Run: `bazel-bin/tensorflow/examples/multibox_detector/detect_objects`
 
-and 
+Run:
+```
+wget https://storage.googleapis.com/download.tensorflow.org/models/mobile_multibox_v1a.zip -O tensorflow/examples/multibox_detector/data/mobile_multibox_v1a.zip
+unzip tensorflow/examples/multibox_detector/data/mobile_multibox_v1a.zip -d tensorflow/examples/multibox_detector/data/
+bazel-bin/tensorflow/examples/multibox_detector/detect_objects --image=../paint3.png
+```
