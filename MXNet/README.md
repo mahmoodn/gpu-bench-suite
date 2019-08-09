@@ -19,8 +19,6 @@ Clone MXNet porject:
 ```
 git clone --recursive https://github.com/apache/incubator-mxnet mxnet
 cd mxnet
-
-make/config.mk
 ```
 Clone and build warp-ctc:
 
