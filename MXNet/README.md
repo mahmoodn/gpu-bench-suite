@@ -62,6 +62,11 @@ cd example/speech_recognition/
 pip install mxboard soundfile
 mkdir checkpoints
 mkdir log
-
+wget https://raw.githubusercontent.com/mahmoodn/orca/master/MXNet/Libri_sample.zip
+unzip Libri_sample.zip -d Libri_sample/
+wget https://raw.githubusercontent.com/mahmoodn/orca/master/MXNet/Libri_sample.json
+vim default.cfg
+    num_epoch = 2
+python main.py --configfile default.cfg
 ```
 
