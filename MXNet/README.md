@@ -19,10 +19,26 @@ Clone MXNet porject:
 ```
 git clone --recursive https://github.com/apache/incubator-mxnet mxnet
 cd mxnet
+
+make/config.mk
+```
+Clone and build warp-ctc:
+
+```
+git clone https://github.com/baidu-research/warp-ctc.git
+cd warp-ctc
+mkdir build
+cd build
+cmake ../
+make
 ```
 Build on GPU with OpenCV and OpenBlas:
 ```
-sudo make -j 4 USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+vim make/config.mk
+    WARPCTC_PATH = /home/user1/mx/mxnet/warp-ctc
+    MXNET_PLUGINS += plugin/warpctc/warpctc.mk
+export LD_LIBRARY_PATH=/home/user1/mx/mxnet/warp-ctc/build:$LD_LIBRARY_PATH
+make -j 4 USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
 export LD_LIBRARY_PATH=~/mxnet/lib:/usr/local/cuda-10.0/lib64
 cd python/
 pip install --user -e .
@@ -36,6 +52,7 @@ cd example/cnn_text_classification/
 pip install cython
 pip install word2vec
 python text_cnn.py --num-epochs=1 --gpus=0
+cd ../..
 ```
 
 and
@@ -43,5 +60,8 @@ and
 ```
 cd example/speech_recognition/
 pip install mxboard soundfile
+mkdir checkpoints
+mkdir log
+
 ```
 
