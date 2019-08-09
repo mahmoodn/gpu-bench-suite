@@ -28,28 +28,20 @@ cd python/
 pip install --user -e .
 
 ```
-You can find different examples in the example folder. The instruction of how to run each example can be found in its README.md file.
 
-
-
-Example:
-
-For a python absed example, install python language for mxnet
-```
-cd python
-pip install -e .
-```
-then 
-```
-cd ../examples/reinforcement-learning/a3c
-pip install opencv-python
-pip install gym
-pip install gym[atari]
+Examples:
 
 ```
-run `python a3c.py --batch-size=32 --gpus=0` to run training on gpu 0 with batch-size=32.
+cd example/cnn_text_classification/
+pip install cython
+pip install word2vec
+python text_cnn.py --num-epochs=1 --gpus=0
+```
 
-run `python launcher.py --gpus=0,1 -n 2 python a3c.py` to launch training on 2 gpus (0 and 1), each gpu has two workers.
-Note: You might have to update the path to dmlc-core in launcher.py.
+and
 
-For speech
+```
+cd example/speech_recognition/
+pip install mxboard soundfile
+```
+
