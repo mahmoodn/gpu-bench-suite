@@ -12,7 +12,7 @@ sudo ldconfig
 Some apt dependencies
 
 ```
-sudo apt install libopencv-dev libopenblas-dev
+sudo apt install libopencv-dev libopenblas-dev liblapack-dev
 ```
 
 Clone MXNet porject:
