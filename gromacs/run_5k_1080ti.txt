@@ -1,0 +1,86 @@
+                      :-) GROMACS - gmx mdrun, 2019.3 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2019.3
+Executable:   /home/mh.naderan/gr/gromacs-2019.3/single/bin/gmx
+Data prefix:  /home/mh.naderan/gr/gromacs-2019.3/single
+Working dir:  /home/mh.naderan/gr
+Command line:
+  gmx mdrun -nb gpu -v -deffnm nvt_5k
+
+
+Back Off! I just backed up nvt_5k.log to ./#nvt_5k.log.11#
+Reading file nvt_5k.tpr, VERSION 2019.3 (single precision)
+Changing nstlist from 20 to 100, rlist from 1.023 to 1.147
+
+Using 1 MPI thread
+Using 4 OpenMP threads 
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 2 GPU tasks in the 1 rank on this node:
+  PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PME tasks will do all aspects on the GPU
+
+Back Off! I just backed up nvt_5k.trr to ./#nvt_5k.trr.8#
+
+Back Off! I just backed up nvt_5k.edr to ./#nvt_5k.edr.8#
+starting mdrun 'Protein'
+5000 steps,     10.0 ps.
+step  200: timed with pme grid 64 80 60, coulomb cutoff 1.000: 1224.4 M-cycles
+step  400: timed with pme grid 60 72 56, coulomb cutoff 1.075: 1284.7 M-cycles
+step  600: timed with pme grid 52 64 52, coulomb cutoff 1.210: 1365.1 M-cycles
+step  800: timed with pme grid 48 60 48, coulomb cutoff 1.296: 1437.2 M-cycles
+step 1000: timed with pme grid 52 64 48, coulomb cutoff 1.239: 1374.3 M-cycles
+step 1200: timed with pme grid 52 64 52, coulomb cutoff 1.210: 1358.8 M-cycles
+step 1400: timed with pme grid 52 72 52, coulomb cutoff 1.196: 1370.6 M-cycles
+step 1600: timed with pme grid 56 72 52, coulomb cutoff 1.144: 1318.9 M-cycles
+step 1800: timed with pme grid 56 72 56, coulomb cutoff 1.111: 1291.1 M-cycles
+step 2000: timed with pme grid 60 72 56, coulomb cutoff 1.075: 1257.1 M-cycles
+step 2200: timed with pme grid 60 80 56, coulomb cutoff 1.062: 1257.3 M-cycles
+step 2400: timed with pme grid 60 80 60, coulomb cutoff 1.037: 1246.9 M-cycles
+step 2600: timed with pme grid 64 80 60, coulomb cutoff 1.000: 1196.8 M-cycles
+step 2800: timed with pme grid 56 72 52, coulomb cutoff 1.144: 1324.6 M-cycles
+step 3000: timed with pme grid 56 72 56, coulomb cutoff 1.111: 1467.3 M-cycles
+step 3200: timed with pme grid 60 72 56, coulomb cutoff 1.075: 1337.9 M-cycles
+step 3400: timed with pme grid 60 80 56, coulomb cutoff 1.062: 1260.7 M-cycles
+step 3600: timed with pme grid 60 80 60, coulomb cutoff 1.037: 1238.7 M-cycles
+step 3800: timed with pme grid 64 80 60, coulomb cutoff 1.000: 1195.0 M-cycles
+              optimal pme grid 64 80 60, coulomb cutoff 1.000
+step 3900, remaining wall clock time:     5 s          step 4000, remaining wall clock time:     4 s          step 4100, remaining wall clock time:     4 s          step 4200, remaining wall clock time:     3 s          step 4300, remaining wall clock time:     3 s          step 4400, remaining wall clock time:     2 s          step 4500, remaining wall clock time:     2 s          step 4600, remaining wall clock time:     1 s          step 4700, remaining wall clock time:     1 s          step 4800, remaining wall clock time:     0 s          step 4900, remaining wall clock time:     0 s          
+Writing final coordinates.
+
+Back Off! I just backed up nvt_5k.gro to ./#nvt_5k.gro.7#
+step 5000, remaining wall clock time:     0 s          
+               Core t (s)   Wall t (s)        (%)
+       Time:       90.048       22.512      400.0
+                 (ns/day)    (hour/ns)
+Performance:       38.387        0.625
+
+GROMACS reminds you: "She's Not Bad, She's Just Genetically Mean" (Captain Beefheart)
+
