@@ -1,7 +1,7 @@
 Prerequites
 
 ```
-sudo apt-get install libjpeg-dev libpng-dev libfftw3-dev
+sudo apt-get install libopenmpi-dev libjpeg-dev libpng-dev libfftw3-dev
 vim ~/.bashrc
    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.0/lib64
 
