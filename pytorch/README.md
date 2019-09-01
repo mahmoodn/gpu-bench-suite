@@ -22,4 +22,16 @@ cd pytorch
 sudo python setup.py install
 ```
 
+
+Run
+
+```
+cd examples/super_resolution/
+python main.py --upscale_factor 3 --batchSize 4 --testBatchSize 100 --nEpochs 1 --lr 0.001
+
+cd examples/word_language_model/
+python main.py --cuda --emsize 650 --nhid 650 --dropout 0.5 --epochs 40   
+```
+
+
 git clone https://github.com/pytorch/examples
