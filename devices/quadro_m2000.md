@@ -40,7 +40,7 @@ deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 10.0, CUDA Runtime Vers
 Result = PASS
 ```
 
-2)
+2) MixBench
 
 ```
 mixbench/alternating (v0.03-1-g3ace732)
