@@ -1,4 +1,5 @@
-1)
+1) DeviceQuery
+
 ```
   CUDA Driver Version / Runtime Version          10.0 / 10.0
   CUDA Capability Major/Minor version number:    7.5
