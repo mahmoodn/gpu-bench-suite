@@ -33,4 +33,5 @@
   Supports MultiDevice Co-op Kernel Launch:      Yes
   Device PCI Domain ID / Bus ID / location ID:   0 / 131 / 0
   Compute Mode:
-     < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >```
+     < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
+```
