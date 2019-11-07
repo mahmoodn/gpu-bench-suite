@@ -19,9 +19,16 @@ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
-sudo python setup.py install
+sudo python setup.py install --user
 ```
 
+4) Install Vision
+
+```
+git clone https://github.com/pytorch/vision
+cd vision
+sudo python setup.py install --user
+```
 
 Run
 
