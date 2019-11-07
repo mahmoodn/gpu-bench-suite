@@ -37,10 +37,12 @@
 > Peer access from GeForce RTX 2080 Ti (GPU0) -> GeForce GTX 1080 Ti (GPU1) : No
 > Peer access from GeForce RTX 2080 Ti (GPU0) -> GeForce GTX 980 Ti (GPU2) : No
 > Peer access from GeForce GTX 1080 Ti (GPU1) -> GeForce RTX 2080 Ti (GPU0) : No
-> Peer access from GeForce GTX 1080 Ti (GPU1) -> GeForce GTX 980 Ti (GPU2) : No 
+> Peer access from GeForce GTX 1080 Ti (GPU1) -> GeForce GTX 980 Ti (GPU2) : No
 > Peer access from GeForce GTX 980 Ti (GPU2) -> GeForce RTX 2080 Ti (GPU0) : No
 > Peer access from GeForce GTX 980 Ti (GPU2) -> GeForce GTX 1080 Ti (GPU1) : No
 
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 10.0, CUDA Runtime Version = 10.0, NumDevs = 3
 Result = PASS
 ```
+
+2) MixBench
