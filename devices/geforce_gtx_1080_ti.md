@@ -36,3 +36,5 @@
   Compute Mode:
      < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
 ```
+
+2) MixBench
