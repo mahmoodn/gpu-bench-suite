@@ -2,7 +2,7 @@ Install PyTorch from source with pip and cudnn.
 
 
 ```
-pip install -U --user numpy pyyaml typing
+pip install -U --user numpy pyyaml typing keras scipy
 ```
 
 2) Install cudnn
@@ -19,7 +19,7 @@ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
-sudo python setup.py install --user
+python setup.py install --user
 ```
 
 4) Install Vision
