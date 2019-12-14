@@ -2,7 +2,7 @@ Install PyTorch from source with pip and cudnn.
 
 
 ```
-pip install -U --user numpy pyyaml typing keras scipy
+pip install -U --user numpy pyyaml typing keras scipy future
 ```
 
 2) Install cudnn
