@@ -1,21 +1,46 @@
-For ffnvcodec (https://superuser.com/questions/1299064/), first do
+Download prerequisites from source
+
+yasm:
+```
+wget http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+tar zxf yasm-1.3.0.tar.gz
+cd yasm-1.3.0/
+ls
+./configure --prefix=`pwd`
+make
+make install
+```
+
+nv-codec-headers ffnvcodec (https://superuser.com/questions/1299064/)
 ```
 git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
-cd nv-codec-headers
+mkdir nv_codec_headers
+cd nv-codec-headers/
+vim Makefile
+   prefix path/to/nv_codec_headers
 make
-sudo make install
+make install
 ```
+
+libnpp
+```
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-npp-10-1_10.1.168-1_amd64.deb
+dpkg -x cuda-npp-10-1_10.1.168-1_amd64.deb  .
+cd usr/local/cuda-10.1/lib64/
+cp libnpp* /path/to/cuda_toolkit/lib64/
+```
+Ensure that `npp.h` is in `/path/to/cuda_toolkit/include`
+
+
 Now
 ```
 sudo apt install yasm 
 git clone https://git.ffmpeg.org/ffmpeg.git
-./configure --enable-cuda --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
+PKG_CONFIG_PATH="/path/to/nv_codec_headers/lib/pkgconfig/"  ./configure --x86asmexe=/path/to/yasm-1.3.0/bin/yasm --enable-cuda --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/path/to/cuda_toolkit/include --extra-cflags=-I/path/to/nv_codec_headers/include/ffnvcodec/ --extra-ldflags=-L/path/to/cuda_toolkit/lib64/
+
 make -j 10
 ```
-For nv-code-headers in non default location, use
-```
-PKG_CONFIG_PATH="/path/to/lib/pkgconfig" ./configure --enable-cuda --enable-cuvid --enable-nvenc --enable-nonfree --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64
-```
+
 
 Commands:
 ```
