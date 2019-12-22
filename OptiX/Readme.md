@@ -22,6 +22,7 @@ sudo make install
 Then
 
 ```
+sudo apt install libxinerama-dev libxrandr-dev libxcursor-dev
 cd optix_advanced_samples
 mkdir build
 cd build
