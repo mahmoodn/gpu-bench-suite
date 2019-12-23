@@ -16,3 +16,5 @@ cd MNIST
 cd ..
 python main.py
 ```
+
+Ref: https://pytorch.org/tutorials/intermediate/spatial_transformer_tutorial.html
