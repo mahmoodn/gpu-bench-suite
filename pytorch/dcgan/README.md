@@ -29,3 +29,5 @@ if flag == 1:
 ```
 
 Uncomment the last lines to see the plots if you want.
+
+Ref: https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
