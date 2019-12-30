@@ -21,12 +21,13 @@ make yes-gpu
 make yes-molecule
 make yes-kspace
 make yes-rigid
-make ubuntu -j8
+make yes-colloid
+make mpi -j8
 ```
 
 Run `lj` and `rhodo` inputs. You may set `run` value to lower values to reduce the time.
 ```
-mpirun -np 4 /opt/lammps-22Aug18/src/lmp_ubuntu -sf gpu -in in.lj
-mpirun -np 4 /opt/lammps-22Aug18/src/lmp_ubuntu -sf gpu -in in.rhodo
+./src/lmp_mpi -sf gpu -in in.lj
+
 ```
 
