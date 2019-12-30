@@ -171,3 +171,12 @@ Compute iters, Flops/byte, ex.time,  GFLOPS, GB/sec, Flops/byte, ex.time,  GFLOP
 
 
 ```
+
+L1 bandwidth
+```
+nThreads = 64	  Transfered = 64 KB	Clock_Cycles = 148651	Bandwidth = 0.64 GB/s
+nThreads = 128	  Transfered = 128 KB	Clock_Cycles = 116779	Bandwidth = 1.63 GB/s
+nThreads = 256	  Transfered = 256 KB	Clock_Cycles = 124967	Bandwidth = 3.05 GB/s
+nThreads = 512	  Transfered = 512 KB	Clock_Cycles = 160749	Bandwidth = 4.75 GB/s
+nThreads = 1024	  Transfered = 1024 KB	Clock_Cycles = 261065	Bandwidth = 5.84 GB/s
+```
