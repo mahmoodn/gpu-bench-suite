@@ -1,0 +1,54 @@
+```
+#!/bin/bash
+RODINIA=/home/mahmood/suites/rodinia_3.1
+cd $RODINIA/cuda/bfs/
+./bfs ../../data/bfs/graph1MW_6.txt
+
+cd $RODINIA/cuda/b+tree
+./b+tree.out file ../../data/b+tree/mil.txt command ../../data/b+tree/command.txt
+
+cd $RODINIA/cuda/backprop
+./backprop 65536
+
+cd $RODINIA/cuda/cfd
+./euler3d ../../data/cfd/missile.domn.0.2M
+
+cd $RODINIA/cuda/dwt2d
+./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3
+
+cd $RODINIA/cuda/gaussian
+./gaussian -s 16
+
+cd $RODINIA/cuda/heartwall
+./heartwall ../../data/heartwall/test.avi 20
+
+cd $RODINIA/cuda/hotspot3D
+./3D 512 8 100 ../../data/hotspot3D/power_512x8 ../../data/hotspot3D/temp_512x8 output.out
+
+cd $RODINIA/cuda/huffman
+./pavle ../../data/huffman/test1024_H2.206587175259.in
+
+cd $RODINIA/cuda/lavaMD
+./lavaMD -boxes1d 10n
+
+cd $RODINIA/cuda/lud
+cuda/lud_cuda -s 256 -v
+
+cd $RODINIA/cuda/myocyte
+./myocyte.out 100 1 0
+
+cd $RODINIA/cuda/nn
+./nn filelist_4 -r 5 -lat 30 -lng 90
+
+cd $RODINIA/cuda/nw
+./needle 2048 10
+
+cd $RODINIA/cuda/pathfinder
+./pathfinder 100000 100 20
+
+cd $RODINIA/cuda/srad/srad_v1/
+./srad 100 0.5 502 458
+
+cd $RODINIA/cuda/streamcluster
+./sc_gpu 10 20 256 65536 65536 1000 none output.txt 1
+```
