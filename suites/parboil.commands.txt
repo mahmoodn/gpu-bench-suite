@@ -1,0 +1,36 @@
+```
+#!/bin/bash
+PARBOIL=/home/mahmood/suites/parboil
+BENCH=$PARBOIL/benchmarks
+DATASET=$PARBOIL/datasets
+
+cd $BENCH/bfs
+build/cuda_default/bfs -i $DATASET/bfs/NY/input/graph_input.dat -o $BENCH/bfs/run/NY/bfs.out
+
+cd $BENCH/butcp
+build/cuda_default/cutcp -i $DATASET/cutcp/large/input/watbox.sl100.pqr -o $BENCH/cutcp/run/large/lattice.dat
+
+cd $BENCH/histo
+build/cuda_default/histo -i $DATASET/histo/large/input/img.bin -o $BENCH/histo/run/large/ref.bmp -- 10000 4
+
+cd $BENCH/mri-gridding
+build/cuda_default/mri-gridding -i $DATASET/mri-gridding/small/input/small.uks -o $BENCH/mri-gridding/run/small/output.txt -- 32 0
+
+cd $BENCH/mri-q
+build/cuda_default/mri-q -i $DATASET/mri-q/large/input/64_64_64_dataset.bin -o $BENCH/mri-q/run/large/64_64_64_dataset.out
+
+cd $BENCH/sad
+build/cuda_default/sad -i $DATASET/sad/large/input/reference.bin,$DATASET/sad/large/input/frame.bin -o $BENCH/sad/run/large/out.bin
+
+cd $BENCH/sgemm
+build/cuda_default/sgemm -i $DATASET/sgemm/medium/input/matrix1.txt,$DATASET/sgemm/medium/input/matrix2t.txt$DATASET/sgemm/medium/input/matrix2t.txt -o $BENCH/sgemm/run/medium/matrix3.txt
+
+cd $BENCH/spmv
+build/cuda_default/spmv -i $DATASET/spmv/large/input/Dubcova3.mtx.bin,$DATASET/spmv/large/input/vector.bin -o $BENCH/spmv/run/large/Dubcova3.mtx.out
+
+cd $BENCH/stencil
+build/cuda_default/stencil -i $DATASET/stencil/default/input/512x512x64x100.bin -o $BENCH/stencil/run/default/512x512x64.out -- 512 512 64 100
+
+cd $BENCH/tpacf
+build/cuda_default/tpacf -i $DATASET/tpacf/large/input/Datapnts.1,$DATASET/tpacf/large/input/Randompnts.1,$DATASET/tpacf/large/input/Randompnts.2,$DATASET/tpacf/large/input/Randompnts.3,$DATASET/tpacf/large/input/Randompnts.4,$DATASET/tpacf/large/input/Randompnts.5,$DATASET/tpacf/large/input/Randompnts.6,$DATASET/tpacf/large/input/Randompnts.7,$DATASET/tpacf/large/input/Randompnts.8,$DATASET/tpacf/large/input/Randompnts.9,$DATASET/tpacf/large/input/Randompnts.10,$DATASET/tpacf/large/input/Randompnts.11,$DATASET/tpacf/large/input/Randompnts.12,$DATASET/tpacf/large/input/Randompnts.13,$DATASET/tpacf/large/input/Randompnts.14,$DATASET/tpacf/large/input/Randompnts.15,$DATASET/tpacf/large/input/Randompnts.16,$DATASET/tpacf/large/input/Randompnts.17,$DATASET/tpacf/large/input/Randompnts.18,$DATASET/tpacf/large/input/Randompnts.19,$DATASET/tpacf/large/input/Randompnts.20,$DATASET/tpacf/large/input/Randompnts.21,$DATASET/tpacf/large/input/Randompnts.22,$DATASET/tpacf/large/input/Randompnts.23,$DATASET/tpacf/large/input/Randompnts.24,$DATASET/tpacf/large/input/Randompnts.25,$DATASET/tpacf/large/input/Randompnts.26,$DATASET/tpacf/large/input/Randompnts.27,$DATASET/tpacf/large/input/Randompnts.28,$DATASET/tpacf/large/input/Randompnts.29,$DATASET/tpacf/large/input/Randompnts.30,$DATASET/tpacf/large/input/Randompnts.31,$DATASET/tpacf/large/input/Randompnts.32,$DATASET/tpacf/large/input/Randompnts.33,$DATASET/tpacf/large/input/Randompnts.34,$DATASET/tpacf/large/input/Randompnts.35,$DATASET/tpacf/large/input/Randompnts.36,$DATASET/tpacf/large/input/Randompnts.37,$DATASET/tpacf/large/input/Randompnts.38,$DATASET/tpacf/large/input/Randompnts.39,$DATASET/tpacf/large/input/Randompnts.40,$DATASET/tpacf/large/input/Randompnts.41,$DATASET/tpacf/large/input/Randompnts.42,$DATASET/tpacf/large/input/Randompnts.43,$DATASET/tpacf/large/input/Randompnts.44,$DATASET/tpacf/large/input/Randompnts.45,$DATASET/tpacf/large/input/Randompnts.46,$DATASET/tpacf/large/input/Randompnts.47,$DATASET/tpacf/large/input/Randompnts.48,$DATASET/tpacf/large/input/Randompnts.49,$DATASET/tpacf/large/input/Randompnts.50,$DATASET/tpacf/large/input/Randompnts.51,$DATASET/tpacf/large/input/Randompnts.52,$DATASET/tpacf/large/input/Randompnts.53,$DATASET/tpacf/large/input/Randompnts.54,$DATASET/tpacf/large/input/Randompnts.55,$DATASET/tpacf/large/input/Randompnts.56,$DATASET/tpacf/large/input/Randompnts.57,$DATASET/tpacf/large/input/Randompnts.58,$DATASET/tpacf/large/input/Randompnts.59,$DATASET/tpacf/large/input/Randompnts.60,$DATASET/tpacf/large/input/Randompnts.61,$DATASET/tpacf/large/input/Randompnts.62,$DATASET/tpacf/large/input/Randompnts.63,$DATASET/tpacf/large/input/Randompnts.64,$DATASET/tpacf/large/input/Randompnts.65,$DATASET/tpacf/large/input/Randompnts.66,$DATASET/tpacf/large/input/Randompnts.67,$DATASET/tpacf/large/input/Randompnts.68,$DATASET/tpacf/large/input/Randompnts.69,$DATASET/tpacf/large/input/Randompnts.70,$DATASET/tpacf/large/input/Randompnts.71,$DATASET/tpacf/large/input/Randompnts.72,$DATASET/tpacf/large/input/Randompnts.73,$DATASET/tpacf/large/input/Randompnts.74,$DATASET/tpacf/large/input/Randompnts.75,$DATASET/tpacf/large/input/Randompnts.76,$DATASET/tpacf/large/input/Randompnts.77,$DATASET/tpacf/large/input/Randompnts.78,$DATASET/tpacf/large/input/Randompnts.79,$DATASET/tpacf/large/input/Randompnts.80,$DATASET/tpacf/large/input/Randompnts.81,$DATASET/tpacf/large/input/Randompnts.82,$DATASET/tpacf/large/input/Randompnts.83,$DATASET/tpacf/large/input/Randompnts.84,$DATASET/tpacf/large/input/Randompnts.85,$DATASET/tpacf/large/input/Randompnts.86,$DATASET/tpacf/large/input/Randompnts.87,$DATASET/tpacf/large/input/Randompnts.88,$DATASET/tpacf/large/input/Randompnts.89,$DATASET/tpacf/large/input/Randompnts.90,$DATASET/tpacf/large/input/Randompnts.91,$DATASET/tpacf/large/input/Randompnts.92,$DATASET/tpacf/large/input/Randompnts.93,$DATASET/tpacf/large/input/Randompnts.94,$DATASET/tpacf/large/input/Randompnts.95,$DATASET/tpacf/large/input/Randompnts.96,$DATASET/tpacf/large/input/Randompnts.97,$DATASET/tpacf/large/input/Randompnts.98,$DATASET/tpacf/large/input/Randompnts.99,$DATASET/tpacf/large/input/Randompnts.100 -o $BENCH/tpacf/run/large/tpacf.out -- -n 100 -p 10391
+```
