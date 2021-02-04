@@ -1,3 +1,4 @@
+```
 ./deviceQuery Starting...
 
  CUDA Device Query (Runtime API) version (CUDART static linking)
@@ -44,3 +45,4 @@ Device 0: "GeForce RTX 3080"
 
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 11.2, CUDA Runtime Version = 11.2, NumDevs = 1
 Result = PASS
+```
