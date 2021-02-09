@@ -7,11 +7,14 @@ DATASET=$PARBOIL/datasets
 cd $BENCH/bfs
 build/cuda_default/bfs -i $DATASET/bfs/NY/input/graph_input.dat -o $BENCH/bfs/run/NY/bfs.out
 
-cd $BENCH/butcp
+cd $BENCH/cutcp
 build/cuda_default/cutcp -i $DATASET/cutcp/large/input/watbox.sl100.pqr -o $BENCH/cutcp/run/large/lattice.dat
 
 cd $BENCH/histo
 build/cuda_default/histo -i $DATASET/histo/large/input/img.bin -o $BENCH/histo/run/large/ref.bmp -- 10000 4
+
+cd $BENCH/lbm
+build/cuda_default/lbm -i $DATASET/lbm/long/input/120_120_150_ldc.of -o $BENCH/lbm/run/long/reference.dat -- 3000
 
 cd $BENCH/mri-gridding
 build/cuda_default/mri-gridding -i $DATASET/mri-gridding/small/input/small.uks -o $BENCH/mri-gridding/run/small/output.txt -- 32 0
