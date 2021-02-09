@@ -29,7 +29,7 @@ cd $RODINIA/cuda/huffman
 ./pavle ../../data/huffman/test1024_H2.206587175259.in
 
 cd $RODINIA/cuda/lavaMD
-./lavaMD -boxes1d 10n
+./lavaMD -boxes1d 10
 
 cd $RODINIA/cuda/lud
 cuda/lud_cuda -s 256 -v
@@ -42,6 +42,9 @@ cd $RODINIA/cuda/nn
 
 cd $RODINIA/cuda/nw
 ./needle 2048 10
+
+cd $RODINIA/cuda/particlefilter
+./particlefilter_float -x 128 -y 128 -z 10 -np 1000
 
 cd $RODINIA/cuda/pathfinder
 ./pathfinder 100000 100 20
