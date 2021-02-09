@@ -26,7 +26,7 @@ cd $BENCH/sad
 build/cuda_default/sad -i $DATASET/sad/large/input/reference.bin,$DATASET/sad/large/input/frame.bin -o $BENCH/sad/run/large/out.bin
 
 cd $BENCH/sgemm
-build/cuda_default/sgemm -i $DATASET/sgemm/medium/input/matrix1.txt,$DATASET/sgemm/medium/input/matrix2t.txt$DATASET/sgemm/medium/input/matrix2t.txt -o $BENCH/sgemm/run/medium/matrix3.txt
+build/cuda_default/sgemm -i $DATASET/sgemm/medium/input/matrix1.txt,$DATASET/sgemm/medium/input/matrix2t.txt,$DATASET/sgemm/medium/input/matrix2t.txt -o $BENCH/sgemm/run/medium/matrix3.txt
 
 cd $BENCH/spmv
 build/cuda_default/spmv -i $DATASET/spmv/large/input/Dubcova3.mtx.bin,$DATASET/spmv/large/input/vector.bin -o $BENCH/spmv/run/large/Dubcova3.mtx.out
