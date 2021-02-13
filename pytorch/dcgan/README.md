@@ -1,3 +1,7 @@
+```
+pip install --user ipython
+```
+
 Download CelebA dataset fom https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg
 
 Extract it with the following structure:
