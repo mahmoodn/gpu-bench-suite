@@ -28,8 +28,14 @@ cd $RODINIA/cuda/hotspot3D
 cd $RODINIA/cuda/huffman
 ./pavle ../../data/huffman/test1024_H2.206587175259.in
 
+cd $RODINIA/cuda/kmeans
+./kmeans -o -i ../../data/kmeans/kdd_cup
+
 cd $RODINIA/cuda/lavaMD
 ./lavaMD -boxes1d 10
+
+cd $RODINIA/cuda/leukocyte
+./CUDA/leukocyte  ../../data/leukocyte/testfile.avi 5
 
 cd $RODINIA/cuda/lud
 cuda/lud_cuda -s 256 -v
